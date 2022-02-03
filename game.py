@@ -12,29 +12,26 @@ print("You chose", user_choice)
 
 
 # validate inputs
+#switch capitalization of rock
 if user_choice == "Rock":
     user_choice = "rock"
 elif user_choice == "ROCK":
     user_choice = "rock"
-elif user_choice == "rock":
-    user_choice = "rock"
+#switch capitalization of paper
 elif user_choice == "Paper":
     user_choice = "paper"
 elif user_choice == "PAPER":
     user_choice = "paper"
-elif user_choice == "paper":
-    user_choice = "paper"
+#switch capitalization of scissors
 elif user_choice == "Scissors":
     user_choice = "scissors"
 elif user_choice == "SCISSORS":
     user_choice = "scissors"
-elif user_choice == "scissors":
-    user_choice = "scissors"
+#if input invalid send a message and quit the program
+#I want it to look back to the input at the beginning
 else:
-    print("Please choose one of the following selections: 'rock', 'paper', 'scissors'!")
+    print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
     quit()
-#I have to get it to loop around so that it keeps asking the user for an input
-#not done with this section
 
 
 # computer choice
