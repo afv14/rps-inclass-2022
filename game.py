@@ -53,13 +53,25 @@ print("The computer chose", computer_choice)
 
 
 #determine the winner
-if computer_choice == user_choice
+if computer_choice == user_choice:
     print("You both chose",computer_choice,"it's a tie! Thanks for playing!")
-elif computer_choice == "rock"
-    if user_choice == "paper"
-    print("Paper covers rock, congratulations you won!")
-    elif user_choice == "scissors"
-    print("Oops. Rock crushes scissors. You lost! Try you luck again!")
+elif computer_choice == "rock":
+    if user_choice == "paper":
+        print("Paper covers rock, congratulations you won!")
+    elif user_choice == "scissors":
+        print("Oops. Rock crushes scissors. You lost! Try your luck again!")
+elif computer_choice == "paper":
+    if user_choice == "scissors":
+        print("Scissors cut paper, congratulations you won!")
+    elif user_choice == "rock":
+        print("Oops. Paper covers rock. You lost! Try your luck again!")
+elif computer_choice == "scissors":
+    if user_choice == "rock":
+        print("Rock crushes scissors, congratulations you won!")
+    elif user_choice == "paper":
+        print("Oops. Paper is cut by scissors. You lost! Try your luck again!")
+    
+
 
 
 #final result
