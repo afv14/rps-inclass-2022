@@ -50,7 +50,6 @@ print(username, "chose:", user_choice)
 # computer choice
 #import random
 import random
-from urllib.parse import uses_relative
 
 #create a list
 computer_options = ["rock","paper","scissors"]
@@ -65,7 +64,7 @@ if computer_choice == user_choice:
     print(username,"you both chose",computer_choice,"it's a tie! Thanks for playing!")
 elif computer_choice == "rock":
     if user_choice == "paper":
-        print("Paper covers rock, congratulations", username, " you won!")
+        print("Paper covers rock, congratulations", username, "you won!")
     elif user_choice == "scissors":
         print("Oops. Rock crushes scissors. Sorry", username, "you lost! Try your luck next time!")
 elif computer_choice == "paper":
@@ -75,7 +74,7 @@ elif computer_choice == "paper":
         print("Oops. Paper covers rock. Sorry", username, "you lost! Try your luck next time!")
 elif computer_choice == "scissors":
     if user_choice == "rock":
-        print("Rock crushes scissors, congratulations", username, " you won!")
+        print("Rock crushes scissors, congratulations", username, "you won!")
     elif user_choice == "paper":
         print("Oops. Paper is cut by scissors. Sorry", username, "you lost! Try your luck next time!")
 
