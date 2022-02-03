@@ -9,7 +9,7 @@ print("------------")
 print("Welcome to my rock Rock-Paper-Scissors game...")
 print("------------")
 
-#ask for Player One Name
+#Let the player input their name
 username = input("Let's get to know each other a little bit. What should I call you? Please enter your name below:")
 
 # ask for use inputs
@@ -61,8 +61,9 @@ print("The computer chose:", computer_choice)
 print("------------")
 
 #determine the winner
+#final result included in the logic that determines the winner
 if computer_choice == user_choice:
-    print(username,"you both chose",computer_choice,"it's a tie! Thanks for playing!")
+    print(username,"it looks like both of you chose",computer_choice,"it's a tie!")
 elif computer_choice == "rock":
     if user_choice == "paper":
         print("Paper covers rock, congratulations", username, "you won!")
@@ -81,12 +82,6 @@ elif computer_choice == "scissors":
 
 #thanks message at end
 print("------------")
-print("Thanks for playing", username, "Come back and visit again!")
+print("Thanks for playing", username, "come back and visit again!")
     
 
-
-
-#final result
-
-
-#let user pick their name
