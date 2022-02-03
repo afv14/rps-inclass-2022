@@ -13,7 +13,8 @@ print("------------")
 username = input("Let's get to know each other a little bit. What should I call you? Please enter your name below:")
 
 # ask for use inputs
-user_choice = input("Now that we've exchanged pleasantries let's get started!", username, "please choose one of the following:  'rock', 'paper', 'scissors': ")
+#???why can't I put a variable into my input box? To use the string stored in the username variable?
+user_choice = input("Now that we've exchanged pleasantries let's get started! Please choose one of the following:  'rock', 'paper', 'scissors': ")
 print("------------")
 
 
@@ -40,7 +41,7 @@ elif user_choice == "SCISSORS":
 elif user_choice == "scissors":
     user_choice = "scissors"
 #if input invalid send a message and quit the program
-#I want it to look back to the input at the beginning
+#???I want it to look back to the input at the beginning
 else:
     print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
     quit()
