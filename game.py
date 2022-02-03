@@ -33,8 +33,13 @@ else:
     print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
     quit()
 
+print(user_choice)
 
 # computer choice
+computer_options = ["rock","paper","scissors"]
+computer_choice = random(computer_options)
+print(computer_choice)
+
 
 
 
