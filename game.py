@@ -4,10 +4,17 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+#welcome message
+print("------------")
+print("Welcome to my rock Rock-Paper-Scissors game...")
+print("------------")
+
+#ask for Player One Name
+username = input("Let's get to know each other a little bit. What should I call you? Please enter your name below:")
 
 # ask for use inputs
-user_choice = input("Let's get started! Please choose one of the following:  'rock', 'paper', 'scissors': ")
-
+user_choice = input("Now that we've exchanged pleasantries let's get started!", username, "please choose one of the following:  'rock', 'paper', 'scissors': ")
+print("------------")
 
 
 # validate inputs
@@ -38,38 +45,43 @@ else:
     print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
     quit()
 
-print("You chose", user_choice)
+print(username, "chose:", user_choice)
 
 # computer choice
 #import random
 import random
+from urllib.parse import uses_relative
 
 #create a list
 computer_options = ["rock","paper","scissors"]
 
 #randomize selection
 computer_choice = random.choice(computer_options)
-print("The computer chose", computer_choice)
-
+print("The computer chose:", computer_choice)
+print("------------")
 
 #determine the winner
 if computer_choice == user_choice:
-    print("You both chose",computer_choice,"it's a tie! Thanks for playing!")
+    print(username,"you both chose",computer_choice,"it's a tie! Thanks for playing!")
 elif computer_choice == "rock":
     if user_choice == "paper":
-        print("Paper covers rock, congratulations you won!")
+        print("Paper covers rock, congratulations", username, " you won!")
     elif user_choice == "scissors":
-        print("Oops. Rock crushes scissors. You lost! Try your luck again!")
+        print("Oops. Rock crushes scissors. Sorry", username, "you lost! Try your luck next time!")
 elif computer_choice == "paper":
     if user_choice == "scissors":
-        print("Scissors cut paper, congratulations you won!")
+        print("Scissors cut paper, congratulations", username, "you won!")
     elif user_choice == "rock":
-        print("Oops. Paper covers rock. You lost! Try your luck again!")
+        print("Oops. Paper covers rock. Sorry", username, "you lost! Try your luck next time!")
 elif computer_choice == "scissors":
     if user_choice == "rock":
-        print("Rock crushes scissors, congratulations you won!")
+        print("Rock crushes scissors, congratulations", username, " you won!")
     elif user_choice == "paper":
-        print("Oops. Paper is cut by scissors. You lost! Try your luck again!")
+        print("Oops. Paper is cut by scissors. Sorry", username, "you lost! Try your luck next time!")
+
+#thanks message at end
+print("------------")
+print("Thanks for playing", username, "Come back and visit again!")
     
 
 
