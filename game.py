@@ -20,31 +20,14 @@ print("------------")
 
 # validate inputs
 #switch capitalization of rock
-if user_choice == "Rock":
-    user_choice = "rock"
-elif user_choice == "ROCK":
-    user_choice = "rock"
-elif user_choice == "rock":
-    user_choice = "rock"
-#switch capitalization of paper
-elif user_choice == "Paper":
-    user_choice = "paper"
-elif user_choice == "PAPER":
-    user_choice = "paper"
-elif user_choice == "paper":
-    user_choice = "paper"
-#switch capitalization of scissors
-elif user_choice == "Scissors":
-    user_choice = "scissors"
-elif user_choice == "SCISSORS":
-    user_choice = "scissors"
-elif user_choice == "scissors":
-    user_choice = "scissors"
+#Eugenie Chandon-Moet gave me this line of code, I originally had if statements that transformed the strings passed through it.
+user_choice = user_choice.lower()
+
 #if input invalid send a message and quit the program
 #???I want it to look back to the input at the beginning
-else:
+if user_choice != "rock" and user_choice != "paper" and user_choice != "scissors":
     print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
-    quit()
+    exit()
 
 print(username, "chose:", user_choice)
 
