@@ -12,11 +12,12 @@ print("------------")
 #Let the player input their name
 import os
 
-username = os.getenv("username", default="Player One")
+username = os.getenv("USERNAME", default="Player One")
 
 # ask for use inputs
-#???why can't I put a variable into my input box? To use the string stored in the username variable?
-user_choice = input("Let's get started! Please choose one of the following:  'rock', 'paper', 'scissors': ")
+#???why can't I put a variable into my input box? To use the string stored in the username variable? 
+#Had to use a formatted string (indicated by the f below) to insert the environment variable
+user_choice = input(f"Let's get started! {username} choose one of the following:  'rock', 'paper', 'scissors': ")
 print("------------")
 
 
@@ -27,6 +28,7 @@ user_choice = user_choice.lower()
 
 #if input invalid send a message and quit the program
 #???I want it to look back to the input at the beginning
+#going to practice this with next project
 if user_choice != "rock" and user_choice != "paper" and user_choice != "scissors":
     print("You have entered an invalid input. Please make sure you enter one of the following selections: 'rock', 'paper', 'scissors'!")
     exit()

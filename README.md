@@ -30,6 +30,12 @@ Run the rock paper scissors game:
 python game.py
 ```
 
+Included in this rock paper scissors game is the option for a user to pass an enviromental variable through the command line terminal. A player is free to set their username as demonstrated below:
+
+```sh
+USERNAME="Dolly Parton" python game.py
+```
+
 ## Testing
 
 Run tests:
@@ -38,6 +44,5 @@ Run tests:
 pytest
 ```
 
-## Passing Environment Variable to the Script
-username="Jon Snow" python game.py
+
 
