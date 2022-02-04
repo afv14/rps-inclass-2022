@@ -39,5 +39,5 @@ pytest
 ```
 
 ## Passing Environment Variable to the Script
-PLAYER_NAME="Jon Snow" python game.py
+username="Jon Snow" python game.py
 

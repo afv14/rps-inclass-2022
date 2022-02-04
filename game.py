@@ -12,11 +12,11 @@ print("------------")
 #Let the player input their name
 import os
 
-username = os.getenv("PLAYER_NAME", default="Player One")
+username = os.getenv("username", default="Player One")
 
 # ask for use inputs
 #???why can't I put a variable into my input box? To use the string stored in the username variable?
-user_choice = input("Now that we've exchanged pleasantries let's get started! Please choose one of the following:  'rock', 'paper', 'scissors': ")
+user_choice = input("Let's get started! Please choose one of the following:  'rock', 'paper', 'scissors': ")
 print("------------")
 
 
