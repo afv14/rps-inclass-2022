@@ -10,7 +10,9 @@ print("Welcome to my rock Rock-Paper-Scissors game...")
 print("------------")
 
 #Let the player input their name
-username = input("Let's get to know each other a little bit. What should I call you? Please enter your name below:")
+import os
+
+username = os.getenv("PLAYER_NAME", default="Player One")
 
 # ask for use inputs
 #???why can't I put a variable into my input box? To use the string stored in the username variable?
